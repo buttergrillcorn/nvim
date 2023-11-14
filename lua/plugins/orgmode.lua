@@ -23,6 +23,13 @@ return {
         org_agenda_files = "~/org/**/*",
         org_default_notes_file = "~/org/refile.org",
       })
+
+      -- Nvim-cmp
+      require("cmp").setup({
+        sources = {
+          { name = "orgmode" },
+        },
+      })
     end,
   },
 }
